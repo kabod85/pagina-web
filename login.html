@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión - CyberSeguridad y Desarrollo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="bg-video">
+    <source src="imagenes/background.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <header>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="reviews.html">Reseñas</a></li>
+        <li><a href="about.html">Quiénes Somos</a></li>
+        <li><a href="login.html" id="login-link">Iniciar Sesión</a></li>
+        <li><a href="register.html" id="register-link">Registrarse</a></li>
+        <li id="user-info" style="display: none;"></li>
+        <li><a href="#" id="logout-link" style="display: none;">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="auth-form">
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form">
+        <input type="text" id="login-username" placeholder="Nombre de usuario" required>
+        <input type="password" id="login-password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
